@@ -8,7 +8,8 @@ function handleCredentialResponse(googleUser) {
         document.querySelector('.g_id_signin').style.cssText = `opacity: 0;`;
     }, 100)
 
-    var decoded = jwt_decode(googleUser.credential);
+  var decoded = jwt_decode(googleUser.credential);
+  
     console.log(decoded);
 
 }
